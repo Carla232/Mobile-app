@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.bookingapp.MainActivity">
+
+    <Button
+        android:id="@+id/btnAllMovies"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="See All Movies"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtName" />
+
+    <Button
+        android:id="@+id/btnCurrentlyWatching"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Currently Watching"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="@+id/btnAllMovies"
+        app:layout_constraintStart_toStartOf="@+id/btnAllMovies"
+        app:layout_constraintTop_toBottomOf="@+id/btnAllMovies" />
+
+    <Button
+        android:id="@+id/btnAlreadyWatched"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Already Watched Movies"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="@+id/btnCurrentlyWatching"
+        app:layout_constraintStart_toStartOf="@+id/btnCurrentlyWatching"
+        app:layout_constraintTop_toBottomOf="@+id/btnCurrentlyWatching" />
+
+    <Button
+        android:id="@+id/btnWatchlist"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Your Watchlist"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="@+id/btnAlreadyWatched"
+        app:layout_constraintStart_toStartOf="@+id/btnAlreadyWatched"
+        app:layout_constraintTop_toBottomOf="@+id/btnAlreadyWatched" />
+
+    <TextView
+        android:id="@+id/txtName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/lemon"
+        android:text="My Movie Collection"
+        android:textSize="18dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgLogo" />
+
+    <Button
+        android:id="@+id/btnFavorite"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="See Your Favorite Movies"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="@+id/btnWatchlist"
+        app:layout_constraintStart_toStartOf="@+id/btnWatchlist"
+        app:layout_constraintTop_toBottomOf="@+id/btnWatchlist" />
+
+    <Button
+        android:id="@+id/btnAbout"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="About"
+        android:textAllCaps="true"
+        app:layout_constraintEnd_toEndOf="@+id/btnFavorite"
+        app:layout_constraintStart_toStartOf="@+id/btnFavorite"
+        app:layout_constraintTop_toBottomOf="@+id/btnFavorite" />
+
+    <TextView
+        android:id="@+id/txtLicense"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="Developed by Carla"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imgLogo"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
