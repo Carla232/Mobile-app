@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.mymovies.MainActivity">
+
+    <Button
+        android:id="@+id/btnAllMovies"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Vezi toate filmele"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtName" />
+
+    <Button
+        android:id="@+id/btnWatchlist"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Filme dorite pentru vizionare"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="@+id/btnAllMovies"
+        app:layout_constraintStart_toStartOf="@+id/btnAllMovies"
+        app:layout_constraintTop_toBottomOf="@+id/btnAllMovies" />
+
+    <Button
+        android:id="@+id/btnFavorite"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Vezi filme favorite"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="@+id/btnWatchlist"
+        app:layout_constraintStart_toStartOf="@+id/btnWatchlist"
+        app:layout_constraintTop_toBottomOf="@+id/btnWatchlist" />
+
+    <Button
+        android:id="@+id/btnCurrentlyWatching"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Filme în decurs de vizionare"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="@+id/btnFavorite"
+        app:layout_constraintStart_toStartOf="@+id/btnFavorite"
+        app:layout_constraintTop_toBottomOf="@+id/btnFavorite" />
+
+    <Button
+        android:id="@+id/btnAlreadyWatched"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Filme deja vizionate"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="@+id/btnCurrentlyWatching"
+        app:layout_constraintStart_toStartOf="@+id/btnCurrentlyWatching"
+        app:layout_constraintTop_toBottomOf="@+id/btnCurrentlyWatching" />
+
+    <Button
+        android:id="@+id/btnLoginRegister"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Conectare"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="@+id/btnAlreadyWatched"
+        app:layout_constraintStart_toStartOf="@+id/btnAlreadyWatched"
+        app:layout_constraintTop_toBottomOf="@+id/btnAlreadyWatched" />
+
+    <Button
+        android:id="@+id/btnLogout"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Deconectare"
+        android:textAllCaps="false"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="@+id/btnLoginRegister"
+        app:layout_constraintStart_toStartOf="@+id/btnLoginRegister"
+        app:layout_constraintTop_toBottomOf="@+id/btnLoginRegister" />
+
+    <TextView
+        android:id="@+id/txtName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/lemon"
+        android:text="Colectia Mea de Filme"
+        android:textSize="18dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgLogo" />
+
+    <TextView
+        android:id="@+id/txtLicense"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="Dezvoltată de Carla"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imgLogo"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

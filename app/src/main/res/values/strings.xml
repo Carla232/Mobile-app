@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Filmele mele</string>
+    <string name="movie_director">Regizor: %1$s</string>
+    <string name="movie_genre">Gen: %1$s</string>
+</resources>
